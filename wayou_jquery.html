@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<ul>
+		<li><a href="http://www.weibo.com">我的微博</a></li>
+		<li><a href="http://www.cnblogs.com/vertko">我的博客</a></li>
+		<li><a href="http://www.douban.com">我的豆瓣</a></li>
+	</ul>
+	<p>这是p标签不是a标签，我不会受影响</p>
+
+	<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="wayou.myplugin.js"></script>
+	<script>
+		(function(){
+			$('a').myplugin({
+				'color':'green', 
+				'fontSize':'32px'
+			});
+		})();
+	</script>
+</body>
+</html>
